@@ -21,7 +21,7 @@ function Layout() {
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="p-4 text-white text-center">
               <h1 className="md:text-[75px] text-[30px] md:pl-24 md:pr-24 pb-4 font-bold">
-                We make your dreams come through with the power of play
+                We make your dreams come true with the power of play
               </h1>
               <button className="mt-4 text-white border-2 border-[#C6FF22] font-black rounded p-4 hover:bg-white hover:text-black hover:border-0">
                 View our Portfolio
