@@ -9,7 +9,7 @@ const Footer = () => {
         </div>
         <div className="md:w-1/5 md:leading-10 leading-10 text-gray-300">
           <ul>
-            <li className="font-bold text-white">NLP</li>
+            <li className="font-bold text-2xl text-white">NLP</li>
             <li>Company</li>
             <li>Blog</li>
             <li>Privacy Policy</li>
@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
         <div className="md:w-1/5 md:leading-10 leading-10 text-gray-300">
           <ul>
-            <li className="font-bold text-white">For developers</li>
+            <li className="font-bold text-white text-2xl">For developers</li>
             <li>Developers</li>
             <li>Game Manager</li>
             <li>Documentation</li>
@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
         <div className="md:w-1/5 md:leading-10 leading-10 text-gray-300">
           <ul>
-            <li className="font-bold text-white">Developers</li>
+            <li className="font-bold text-white text-2xl">Developers</li>
             <li>Another One</li>
             <li>APIs</li>
             <li>Join the Team</li>
@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
         <div className="md:w-1/5 md:leading-10 leading-10 text-gray-300">
           <ul>
-            <li className="font-bold text-white">Location</li>
+            <li className="font-bold text-white text-2xl">Location</li>
             <li>Shop</li>
           </ul>
         </div>
