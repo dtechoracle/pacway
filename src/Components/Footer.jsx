@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       <div className="flex flex-col md:flex-row gap-8 md:gap-24 p-6 md:p-24 bg-black text-white">
         <div className="md:w-1/5">
-          <div>NoLand PacWay</div>
+          <img src="/img/logo-transparent.png" />
         </div>
         <div className="md:w-1/5 md:leading-10 leading-10 text-gray-300">
           <ul>

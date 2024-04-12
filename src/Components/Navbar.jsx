@@ -16,9 +16,10 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <span className={`${textColorClass} text-lg font-semibold`}>
-                Logo
-              </span>
+              <img
+                src="/img/logo-transparent.png"
+                className="w-full h-[100px]"
+              />
             </div>
             <div className="hidden md:flex flex-grow justify-end ml-[830px] items-right">
               <div className="ml-10 flex items-baseline ">
