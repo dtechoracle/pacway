@@ -119,7 +119,7 @@ function Layout() {
             <div className="md:w-1/2">
               <img
                 src="/img/job-image.png"
-                className="absolute md:bottom-[-2700px] bottom-[-3580px] left-0 right-0 md:w-[650px]"
+                className="absolute md:bottom-[-2700px] bottom-[-3650px] left-0 right-0 md:w-[650px]"
               />
             </div>
             <div className="md:w-1/2 p-6 pt-12 md:mt-[150px] md:pr-24 text-center md:text-justify">
