@@ -7,9 +7,9 @@ const Footer = () => {
         <div className="md:w-1/5">
           <div>NoLand PacWay</div>
         </div>
-        <div className="md:w-1/5 md:leading-10">
+        <div className="md:w-1/5 md:leading-10 leading-10 text-gray-300">
           <ul>
-            <li className="font-bold">NLP</li>
+            <li className="font-bold text-white">NLP</li>
             <li>Company</li>
             <li>Blog</li>
             <li>Privacy Policy</li>
@@ -17,25 +17,25 @@ const Footer = () => {
             <li>Cookie Policy</li>
           </ul>
         </div>
-        <div className="md:w-1/5 md:leading-10">
+        <div className="md:w-1/5 md:leading-10 leading-10 text-gray-300">
           <ul>
-            <li className="font-bold">For developers</li>
+            <li className="font-bold text-white">For developers</li>
             <li>Developers</li>
             <li>Game Manager</li>
             <li>Documentation</li>
           </ul>
         </div>
-        <div className="md:w-1/5 md:leading-10">
+        <div className="md:w-1/5 md:leading-10 leading-10 text-gray-300">
           <ul>
-            <li className="font-bold">Developers</li>
+            <li className="font-bold text-white">Developers</li>
             <li>Another One</li>
             <li>APIs</li>
             <li>Join the Team</li>
           </ul>
         </div>
-        <div className="md:w-1/5 md:leading-10">
+        <div className="md:w-1/5 md:leading-10 leading-10 text-gray-300">
           <ul>
-            <li className="font-bold">Location</li>
+            <li className="font-bold text-white">Location</li>
             <li>Shop</li>
           </ul>
         </div>
