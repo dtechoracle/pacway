@@ -34,7 +34,7 @@ const Contact = () => {
               className="md:w-[80%] w-full mb-6 border-b-2 border-gray h-24 text-6xl"
             />
           </form>
-          <button className="mt-8 bg-blue-700 p-6 font-bold text-4xl rounded text-white w-[300px]">
+          <button className="mt-8 bg-blue-700 p-6 font-bold text-4xl rounded text-white md:w-[300px] w-full">
             Send
           </button>
         </div>
