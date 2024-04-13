@@ -26,12 +26,12 @@ const About = () => {
   return (
     <div>
       <Navbar />
-      <div className="flex md:mt-24 md:p-12 gap-4">
+      <div className="md:flex md:mt-24 md:p-12 p-12 gap-4">
         {/* Empty space */}
         <div className="w-1/3"></div>
 
         {/* Content */}
-        <div className="w-1/3">
+        <div className="md:w-1/3">
           <div>
             <p className="font-bold">
               With love from Yaba, To the borders to Nigeria
@@ -46,7 +46,7 @@ const About = () => {
         </div>
 
         {/* Content */}
-        <div className="w-1/3">
+        <div className="md:w-1/3">
           <p className="leading-10">
             We like to think we are a studio where it’s possible to enjoy life
             while creating the best games we possibly can. We believe if we
@@ -64,8 +64,8 @@ const About = () => {
       {/* Team Images */}
       <div className="text-center mt-8">
         <h1 className="font-black text-4xl">Meet the Team</h1>
-        <div className="flex justify-center mt-4">
-          <div className="w-1/4 p-8">
+        <div className="md:flex justify-center mt-4">
+          <div className="md:w-1/4 p-8">
             {" "}
             {/* Added padding to each image container */}
             <img
@@ -76,7 +76,7 @@ const About = () => {
             <h1 className="font-extrabold">Alex Iwobi</h1>
             <p>CEO</p> {/* Added w-full and h-auto classes */}
           </div>
-          <div className="w-1/4 p-8">
+          <div className="md:w-1/4 p-8">
             <img
               src="/img/team2.png"
               alt="Team Member 2"
@@ -85,7 +85,7 @@ const About = () => {
             <h1 className="font-extrabold">Alex Iwobi</h1>
             <p>CEO</p>
           </div>
-          <div className="w-1/4 p-8">
+          <div className="md:w-1/4 p-8">
             <img
               src="/img/team3.png"
               alt="Team Member 3"
@@ -94,7 +94,7 @@ const About = () => {
             <h1 className="font-extrabold">Alex Iwobi</h1>
             <p>CEO</p>
           </div>
-          <div className="w-1/4 p-8">
+          <div className="md:w-1/4 p-8">
             <img
               src="/img/team4.png"
               alt="Team Member 4"
@@ -104,9 +104,9 @@ const About = () => {
             <p>CEO</p>
           </div>
         </div>
-        <div className="bg-blue-800 h-[600px] mt-32 relative">
-          <div className="flex flex-col justify-center items-center h-full text-center p-24">
-            <h1 className="font-black text-[64px] text-white">
+        <div className="bg-blue-800 md:h-[600px] h-[700px] mt-32 relative">
+          <div className="flex flex-col justify-center items-center h-full text-center md:p-24">
+            <h1 className="font-black md:text-[64px] text-[35px] text-white">
               Want to work for us?
             </h1>
             <p className="mt-4 text-white">
@@ -118,7 +118,7 @@ const About = () => {
           </div>
           <img
             src="/img/work.png"
-            className="absolute left-[800px] top-[-100px]"
+            className="absolute md:left-[800px] left-[70px] md:top-[-100px] top-[400px] h-[500px] md:h-full"
             alt="Work image"
           />
         </div>
