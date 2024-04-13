@@ -102,13 +102,13 @@ const Navbar = () => {
         <div className="md:hidden text-center" id="mobile-menu">
           <div className="px-2 pt-2 pb-16 space-y-1 sm:px-3">
             <Link
-              to="/"
+              to="/about"
               className={`${textColorClass} text-6xl block px-3 py-2 rounded-md text-base font-medium`}
             >
               About
             </Link>
             <Link
-              to="/about"
+              to="/games"
               className={`${textColorClass} text-6xl block px-3 py-2 rounded-md text-base font-medium`}
             >
               Games
