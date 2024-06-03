@@ -6,6 +6,7 @@ import Games from "./Pages/Games";
 import View from "./Pages/View";
 import Join from "./Pages/Join";
 import Contact from "./Pages/Contact";
+import AdminForm from "./Pages/Admin/CreateGames";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <Route path="/view/game" element={<View />} />
         <Route path="/join" element={<Join />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/game-upload" element={<AdminForm />} />
       </Routes>
     </BrowserRouter>
   );
