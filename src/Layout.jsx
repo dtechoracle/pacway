@@ -276,12 +276,12 @@ function Layout() {
           </div>
         </div>
         <div className="bg-blue-800 md:h-[600px] h-[800px] md:flex md:text-right">
-          <div className="md:w-1/2 relative">
+          {/* <div className="md:w-1/2 relative">
             <img
               src="/img/job-image.png"
               className="absolute md:bottom-[-270px] bottom-[-365px] left-0 right-0 md:w-[650px]"
             />
-          </div>
+          </div> */}
 
           <div className="md:w-1/2 p-6 pt-12 md:mt-[150px] md:pr-24 text-center md:text-justify">
             <h1 className="font-bold text-[36px] md:text-[48px] text-white">
