@@ -6,13 +6,13 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation(); // Get current location
 
-  // Determine background and text colors based on the current route
-  const backgroundClass = location.pathname === "/" ? "bg-black" : "bg-white";
-  const textColorClass =
-    location.pathname === "/" ? "text-white" : "text-black";
+  // // Determine background and text colors based on the current route
+  // const backgroundClass = location.pathname === "/" ? "bg-black" : "bg-white";
+  // const textColorClass =
+  //   location.pathname === "/" ? "text-white" : "text-black";
 
   return (
-    <nav className={backgroundClass}>
+    <nav className="bg-black">
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between h-32">
           <div className="flex items-center">
