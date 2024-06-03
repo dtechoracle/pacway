@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../Components/Navbar";
 import YouTube from "react-youtube";
 import Footer from "../Components/Footer";
+import "../App.css";
 
 const About = () => {
   const opts = {
@@ -36,7 +37,7 @@ const About = () => {
             <p className="font-bold">
               With love from Yaba, To the borders to Nigeria
             </p>
-            <h1 className="font-black text-6xl">About Us</h1>
+            <h1 className="kanit-extrabold text-6xl">About Us</h1>
             <p className="leading-10">
               We are a team that has worked together for several years but, when
               it comes to our own games, we are really young, with Moonlighter
