@@ -7,6 +7,7 @@ import View from "./Pages/View";
 import Join from "./Pages/Join";
 import Contact from "./Pages/Contact";
 import AdminForm from "./Pages/Admin/CreateGames";
+import Blog from "./Pages/Blog";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="/join" element={<Join />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/game-upload" element={<AdminForm />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </BrowserRouter>
   );

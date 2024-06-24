@@ -7,6 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Layout() {
+  console.log(import.meta.env.VITE_notion_database_id);
   const videoRef = useRef(null);
   const [selectedImage, setSelectedImage] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -58,7 +59,14 @@ function Layout() {
     return (
       <div
         className={`${className} slick-next`}
-        style={{ ...style, display: "block", right: "10px", zIndex: 1 }}
+        style={{
+          ...style,
+          display: "block",
+          backgroundColor: "black",
+          padding: 2,
+          right: "10px",
+          zIndex: 1,
+        }}
         onClick={onClick}
       />
     );
@@ -69,7 +77,14 @@ function Layout() {
     return (
       <div
         className={`${className} slick-prev`}
-        style={{ ...style, display: "block", left: "10px", zIndex: 1 }}
+        style={{
+          ...style,
+          display: "block",
+          backgroundColor: "black",
+          padding: 2,
+          left: "10px",
+          zIndex: 1,
+        }}
         onClick={onClick}
       />
     );
@@ -94,9 +109,26 @@ function Layout() {
   ];
 
   const testimonials = [
-    { text: "This is the best service I have ever used!", author: "John Doe" },
-    { text: "Fantastic experience, highly recommend.", author: "Jane Smith" },
-    { text: "A wonderful team and a fantastic product.", author: "Sam Wilson" },
+    {
+      text: "We couldn't be happier with the game developed by [GameDevCo]! Their team captured our vision perfectly and delivered a product that exceeded our expectations. The graphics are stunning, the gameplay is smooth, and the user experience is top-notch. We highly recommend them for any game development needs!",
+      author: "Alex T., Creative Director at FunTime Games",
+    },
+    {
+      text: "Working with [GameDevCo] was an absolute pleasure. They were professional, communicative, and incredibly talented. Our project was completed on time and within budget, and the final product has received rave reviews from our users. Thank you for bringing our ideas to life!",
+      author: "Jamie L., CEO of PixelDream Studios",
+    },
+    {
+      text: "[GameDevCo] transformed our concept into a fully functional, engaging game that has become a hit in the market. Their expertise in game mechanics, design, and user engagement is unparalleled. We look forward to collaborating with them on future projects.",
+      author: "Sam K., Product Manager at Virtual Adventures Inc.",
+    },
+    {
+      text: "The team at [GameDevCo] is phenomenal. They took our rough ideas and turned them into a polished, fun, and addictive game. Their attention to detail and commitment to quality are evident in every aspect of the game. We are thrilled with the results and our users are too!",
+      author: "Morgan R., Lead Developer at Interactive Creations",
+    },
+    {
+      text: "I highly recommend [GameDevCo] for any game development project. Their creative team is innovative and their technical skills are superb. The game they developed for us has been a great success, attracting thousands of players within the first month of launch. Excellent work!",
+      author: "Chris P., Marketing Manager at DreamQuest Games",
+    },
   ];
 
   const openModal = (image) => {
@@ -174,7 +206,7 @@ function Layout() {
           <h1 className="kanit-black text-white text-[36px] md:text-[48px] text-center pb-8 md:mt-0 mt-6">
             NoLand Pacway
           </h1>
-          <Slider {...carouselSettings} className="flex md:px-20">
+          <Slider {...carouselSettings} className="flex">
             {images.map((image) => (
               <div key={image.src} onClick={() => openModal(image)}>
                 <img
@@ -230,7 +262,7 @@ function Layout() {
               <div className="kanit-bold md:text-[48px] text-[50px] border rounded-full">
                 3
               </div>
-              <p className="text-[#2E54F1] font-semibold text-xl">Games</p>
+              <p className="text-[#2E54F1] kanit-bold text-2xl">Games</p>
             </div>
           </div>
         </div>
@@ -245,10 +277,10 @@ function Layout() {
           >
             {testimonials.map((testimonial, index) => (
               <div key={index} className="p-8 text-center rounded-lg">
-                <p className="text-black text-lg md:text-xl italic mb-4 kanit-bold">
+                <p className="text-black text-lg md:text-xl italic mb-4 kanit-regular">
                   "{testimonial.text}"
                 </p>
-                <p className="text-black text-base md:text-lg kanit-regular">
+                <p className="text-black text-base md:text-lg kanit-bold">
                   {testimonial.author}
                 </p>
               </div>
@@ -257,7 +289,7 @@ function Layout() {
         </div>
         <div className="new bg-[#C6FF22] md:h-[600px] h-[800px] text-center md:text-left flex flex-col md:flex-row">
           <div className="md:w-1/2 flex flex-col justify-center p-6 md:p-12">
-            <div className="md:mt-[100px] md:ml-[50px]">
+            <div className="md:mt-[100px]">
               <h1 className="kanit-black text-[36px] md:text-[48px] text-center md:text-left">
                 What's New
               </h1>
@@ -272,16 +304,51 @@ function Layout() {
             </div>
           </div>
           <div className="w-full">
-            <img src="/img/job-image.png" className="w-full" />
+            {/* <img src="/img/job-image.png" className="w-full" /> */}
+          </div>
+        </div>
+        <div className="relative w-full h-screen">
+          <div className="absolute inset-0 bg-black bg-opacity-[0.6] "></div>
+          <video
+            ref={videoRef}
+            src="/img/another.mp4"
+            className="w-full h-full object-cover"
+            muted
+            autoPlay
+            loop
+            playsInline
+          />
+          {/* <video
+            ref={videoRef}
+            src="/img/hero-video3.mp4"
+            className="w-full h-full object-cover"
+            muted
+            autoPlay
+            loop
+            playsInline
+          /> */}
+          <div className="absolute inset-1 flex justify-center items-center h-full">
+            <div className="p-4 text-white text-center md:max-w-full">
+              <h1 className="md:text-[60px] text-[35px] md:px-24 pb-4 kanit-black">
+                We make your dreams come true with the power of play
+              </h1>
+              <p className="text-[18px] md:text-[30px] kanit-regular">
+                We are innovation partners, purveyors of a new development
+                services model for creative industries.
+              </p>
+              <button className="mt-4 text-white kanit-black border-4 w-full md:w-[400px] border-[#C6FF22] font-black p-4">
+                View our Portfolio
+              </button>
+            </div>
           </div>
         </div>
         <div className="bg-blue-800 md:h-[600px] h-[800px] md:flex md:text-right">
-          {/* <div className="md:w-1/2 relative">
+          <div className="md:w-1/2 relative">
             <img
               src="/img/job-image.png"
-              className="absolute md:bottom-[-270px] bottom-[-365px] left-0 right-0 md:w-[650px]"
+              className="absolute md:bottom-[-100px] bottom-[-365px] left-0 right-0 md:w-[650px]"
             />
-          </div> */}
+          </div>
 
           <div className="md:w-1/2 p-6 pt-12 md:mt-[150px] md:pr-24 text-center md:text-justify">
             <h1 className="font-bold text-[36px] md:text-[48px] text-white">
